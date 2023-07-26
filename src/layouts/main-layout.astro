@@ -1,0 +1,21 @@
+---
+import Nav from "../components/nav";
+const {title} = Astro.props
+---
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta 
+		name="description"
+		content="penis man"/>
+		<meta title={title}/>
+	</head>
+	<body>
+		<main>
+		<Nav client:load/>
+		<h1></h1>
+			<slot/>
+			<! -- all the different pages to be rendered here -->
+		</main>
+	</body>
