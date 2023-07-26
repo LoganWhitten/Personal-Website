@@ -41,7 +41,11 @@ export default function Nav() {
                 <img src={avatar} alt="Profile picture of Hua" />
             </div>
             <h1 className="text-lg font-bold">
+<<<<<<< Updated upstream
                 <a href="/">logan whitten.</a>
+=======
+                <a href="/">logan whitten</a>
+>>>>>>> Stashed changes
             </h1>
             {matches && (
                 <div className="flex gap-12">
@@ -53,7 +57,7 @@ export default function Nav() {
             {!matches && (
                 <div onClick={() => setToggled(prevToggle => !prevToggle)} className="space-y-1.5 cursor-pointer z-50">
                     <motion.span animate={{rotateZ: toggled ? 45 : 0, y: toggled ? 8 : 0}} className="block h-0.5 w-8 bg-black"></motion.span>
-                    <motion.span animate={{opacity: toggled ? 0 : 100}}className="block h-0.5 w-6 bg-black"></motion.span>
+                    <motion.span animate={{rotateZ: toggled ? 45 : 1, x: toggled ? 4 : 0, opacity: toggled ? 0 : 1}}className="block h-0.5 w-6 bg-black"></motion.span>
                     <motion.span animate={{rotateZ: toggled ? -45 : 0, y: toggled ? -8 : 0, width: toggled ? 32: 16}} className="block h-0.5 w-4 bg-black"></motion.span>
                 </div>
             )}
