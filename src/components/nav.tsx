@@ -41,7 +41,7 @@ export default function Nav() {
                 <img src={avatar} alt="Profile picture of Hua" />
             </div>
             <h1 className="text-lg font-bold">
-                <a href="/">logan whitten.</a>
+                <a href="/">joe mama</a>
             </h1>
             {matches && (
                 <div className="flex gap-12">
