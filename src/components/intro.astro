@@ -3,33 +3,31 @@ import paint from '/paint.png';
 import portrait from '/main-portrait.jpg';
 ---
 
-<div class="relative mx-12 flex flex-col items-center justify-center">
-    <h1 class="text-xl">
-        logan does <span class="font-bold">
+<div class="relative mx-12 flex flex-col items-center justify-center xl:flex-row xl:gap-36">
+    <div class="w-full xl:w-1/2">
+    <h1 class="text-4xl">
+        logan gets <span class="font-bold">
             lighting! 🤯
         </span>
     </h1>
+    <br>
     <div class="relative">
-        <svg width="540" 
-        class="absolute h-full w-full overflow-visible"
-        height="255" 
-        viewBox="0 0 540 255" 
-        fill="none" 
-        xmlns="http://www.w3.org/2000/svg">
-            <path
-            id="border-path"
-            d="M538 253.5V167H2L2 2"
-            stroke="url(#paint0_linear_6_33)"
-            stroke-width="3"
-            stroke-linecap="round"/></path>
+        <svg class="absolute h-full w-full overflow-visible">
             <defs>
-            <linearGradient id="paint0_linear_6_33" x1="2.00009" y1="50.9998" x2="589" y2="275.5" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#DC3A2B"/>
-            <stop offset="1" stop-color="#E18510"/>
-            </linearGradient>
+              <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style={{ stopColor: "#DC3A2B", stopOpacity: 1 }}
+                ></stop>
+                <stop offset="100%" style={{ stopColor: "#E18510", stopOpacity: 1 }}
+                ></stop>
+              </linearGradient>
             </defs>
-            </svg>            
-        <p id="anim-p" class="p-6 text-lg">
+            <path
+              id="border-path"
+              fill="none"
+              stroke="url(#gradient)"
+              stroke-width="4"></path>
+          </svg>
+                        <p id="anim-p" class="p-6 text-lg">
             and he has a lot of experience with it! <span class="font-bold text-primary">
             logan</span> has worked on more than 500 
             shows both professionally and in his community<br />
@@ -46,36 +44,68 @@ import portrait from '/main-portrait.jpg';
         <div class="flex justify-center pt-12 text-center mb-12 xl:gap-16">
         <div class="w-32">
             <h2>art posts</h2>
-            <p class="text-xl font-bold">85</p>
+            <p id="art-counter" class="text-xl font-bold">85</p>
         </div>
         <div class="youtube">
             <h2>art posts</h2>
-            <p class="text-xl font-bold">1.2m</p>
+            <p id="youtube-counter" class="text-xl font-bold">1.2m</p>
         </div>
         <div class="w-32">
             <h2>reviews</h2>
-            <p class="text-xl font-bold">50</p>
+            <p id="reviews"class="text-xl font-bold">50</p>
         </div>
     </div>
+    </div>
     <div class="relative">
-        <img class="h-full" src={portrait}/>
-        <div class="absolute bottom-0 right-0 translate-y-1/4"> 
-            <img src={paint}/>
-        </div>
+        <img class="flex h-screen" src={portrait}/>
     </div>
 </div>
 
 <div class="mt-12 h-4 w-full bg-black"> </div>
 
+<style>
+    #border-path{
+        animation: draw 1s forwards 1s ease-out
+    }
+    @keyframes draw {
+        to {
+            stroke-dashoffset: 0;
+        }
+    }
+</style>
+
 <script>
     function updatePath() {
-        const = textMain = document.querySelector('#anim-p') as HTMLElement
+        const textMain = document.querySelector('#anim-p') as HTMLElement
         const path = document.querySelector('#border-path') as SVGPathElement
 
         if(textMain && path) {
-            path.setAttribute('d', `M0,0 V${textMain.offsetHeight} H${textMain.offsetWidth}`)
+            path.setAttribute('d', `M0,0 V${textMain.offsetHeight} H${textMain.offsetWidth} v${textMain.offsetHeight / 2}`)
+        }
+        const pathLength = path.getTotalLength()
+        path.style.strokeDasharray = pathLength.toString()
+        path.style.strokeDashoffset = pathLength.toString()
+    }
+
+    function incrementCounter(selector: string,
+    current: number,
+    target: number,
+    duration: number,
+    letter: string = ""
+    ) {
+        let counter = document.getElementById(selector)
+        let stepTime = Math.abs(Math.floor(duration / target))
+        if (current < target && counter){
+            current++
+            counter.innerText = current.toString() + letter
+            setTimeout(() => incrementCounter(selector, current, target, duration, letter), stepTime,)
         }
     }
+    incrementCounter("art-counter", 0, 85, 2500)
+    incrementCounter("youtube-counter", 0, 320, 2500, "k")
+    incrementCounter("reviews", 0, 250, 2500)
+
+
     window.addEventListener('DOMContentLoaded', updatePath)
     window.addEventListener('resize', updatePath)
 
