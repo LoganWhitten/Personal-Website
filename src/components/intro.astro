@@ -89,7 +89,7 @@ import portrait from '/main-portrait.jpg';
         const path = document.querySelector('#border-path') as SVGPathElement
 
         if(textMain && path) {
-            path.setAttribute('d', `M0,0 V${textMain.offsetHeight} H${textMain.offsetWidth} v${textMain.offsetHeight / 2}`)
+            path.setAttribute('d', `M0,0 V${textMain.offsetHeight} H${textMain.offsetWidth} v${textMain.offsetHeight / 3}`)
         }
         const pathLength = path.getTotalLength()
         path.style.strokeDasharray = pathLength.toString()
