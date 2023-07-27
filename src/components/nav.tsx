@@ -25,7 +25,7 @@ export default function Nav() {
     const [toggled, setToggled] = useState(false)
     const matches = useMediaQuery('(min-width: 1280px)')
     return (
-        <nav className="relative mx-8 mb-24 flex justify-between items-center py-12 pb-6 font-medium md:mx-16 lg:mx-32">
+        <nav className="relative mx-8 flex justify-between items-center py-12 pb-12 font-medium md:mx-16 lg:mx-32">
             <img src={avatar} alt="photo of logan" className="rounded-lg h-12 w-12 scale-x-100 hover:rotate-2 "/>
             <h1 className="text-lg font-bold z-40">
                 <a href="/">logan whitten</a>

@@ -43,21 +43,21 @@ import portrait from '/main-portrait.jpg';
         </div>
         <div class="flex justify-center pt-12 text-center mb-12 xl:gap-16">
         <div class="w-32">
-            <h2>art posts</h2>
+            <h2>professional shows</h2>
             <p id="art-counter" class="text-xl font-bold">85</p>
         </div>
-        <div class="youtube">
-            <h2>art posts</h2>
+        <div class="w-32">
+            <h2>community productions</h2>
             <p id="youtube-counter" class="text-xl font-bold">1.2m</p>
         </div>
         <div class="w-32">
-            <h2>reviews</h2>
+            <h2>total shows designed</h2>
             <p id="reviews"class="text-xl font-bold">50</p>
         </div>
     </div>
     </div>
     <div class="relative">
-        <img class="flex h-screen" src={portrait}/>
+        <img class="flex h-100" style="padding-bottom: 25%" src={portrait}/>
     </div>
 </div>
 
@@ -101,9 +101,9 @@ import portrait from '/main-portrait.jpg';
             setTimeout(() => incrementCounter(selector, current, target, duration, letter), stepTime,)
         }
     }
-    incrementCounter("art-counter", 0, 85, 2500)
-    incrementCounter("youtube-counter", 0, 320, 2500, "k")
-    incrementCounter("reviews", 0, 250, 2500)
+    incrementCounter("art-counter", 0, 6, 2500)
+    incrementCounter("youtube-counter", 0, 15, 4000, "")
+    incrementCounter("reviews", 0, 21, 5500)
 
 
     window.addEventListener('DOMContentLoaded', updatePath)
