@@ -27,7 +27,7 @@ export default function Nav() {
     return (
         <nav className="relative mx-8 flex justify-between items-center py-12 pb-12 font-medium md:mx-16 lg:mx-32">
             <img src={avatar} alt="photo of logan" className="rounded-lg h-12 w-12 scale-x-100 hover:rotate-2 "/>
-            <h1 className="text-lg font-bold z-40">
+            <h1 className="font-bold text-center text-2xl xl:text-3xl mt-4">
                 <a href="/">logan whitten</a>
             </h1>
             {matches && (
