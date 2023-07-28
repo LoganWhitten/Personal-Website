@@ -16,27 +16,26 @@ function parallax() {
                 factor={1}
                 style={{
                     backgroundImage: `url(${art1})`,
-                    backgroundSize: 'cover'
                 }}/>
                 <ParallaxLayer 
-                offset={.25}
+                offset={.5}
                 speed={.25}
                 factor={1}
                 style={{
                     color: "white"
 
                 }}>
-                    <h1 className="text-9xl">hey 👋, my name is</h1>
+                    <h1 className="text-9xl text-center">hey 👋, my name is</h1>
                 </ParallaxLayer>
                 <ParallaxLayer
-                    offset={.60}
+                    offset={.80}
                     speed={1}
                     factor={1}
-                    sticky={{start: .6, end: .5}}
+                    sticky={{start: .8, end: .8}}
                     style={{
                         color: "blue"
                     }}>
-                    <h1 className="text-9xl">logan</h1>
+                    <h1 className="text-9xl text-center">logan!</h1>
                 </ParallaxLayer>
 
                 <ParallaxLayer
