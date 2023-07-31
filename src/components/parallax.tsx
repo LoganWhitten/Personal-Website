@@ -1,9 +1,7 @@
 
 import { Parallax, ParallaxLayer } from "@react-spring/parallax"
 import background from "/background.png"
-import overlay from "/overlay.svg"
-import art2 from "/art2.jpg"
-import { color } from "framer-motion"
+
 
 function parallax() {
     return(
