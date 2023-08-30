@@ -216,13 +216,6 @@ declare module 'astro:content' {
   collection: "work";
   data: InferEntrySchema<"work">
 } & { render(): Render[".md"] };
-"fortress.md": {
-	id: "fortress.md";
-  slug: "fortress";
-  body: string;
-  collection: "work";
-  data: InferEntrySchema<"work">
-} & { render(): Render[".md"] };
 };
 
 	};
