@@ -8,5 +8,4 @@ description: |
 tags:
   - 6 Week Internship
   - Install Work
-  - Maintence Work
 ---
