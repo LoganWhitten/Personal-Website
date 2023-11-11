@@ -35,23 +35,18 @@ const { Content } = await entry.render();
 					<a class="back-link" href="/work/"><Icon icon="arrow-left" /> Work</a>
 					<Hero title={entry.data.title} align="start">
 						<div class="details">
-							<div class="tags">
-								{entry.data.tags.map((t) => <Pill>{t}</Pill>)}
-							</div>
 							<p class="description">{entry.data.description}</p>
 						</div>
 					</Hero>
 				</div>
 			</header>
-			<main class="wrapper">
-				<div class="stack gap-10 content">
-					{entry.data.img && <img src={entry.data.img} alt={entry.data.img_alt || ''} />}
-					<div class="content">
-						<Content />
-					</div>
+				<div class="grid gap-10 content grid-rows-2">
+						{entry.data.img && <img src={entry.data.img} alt={entry.data.img_alt || ''} />}
+						{entry.data.img_2 && <img src={entry.data.img_2 || null} alt={entry.data.img_2_alt || ''} />}
+						{entry.data.img_3 && <img src={entry.data.img_3 || null} alt={entry.data.img_3_alt || ''} />}
+						{entry.data.img_4 && <img src={entry.data.img_4 || null} alt={entry.data.img_4_alt || ''} />}
+
 				</div>
-			</main>
-		</div>
 		<ContactCTA />
 	</div>
 </BaseLayout>
