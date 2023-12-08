@@ -1,0 +1,182 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+import ContactCTA from "../components/ContactCTA.astro";
+import Hero from "../components/Hero.astro";
+---
+
+<BaseLayout
+    title="boom privacy policy"
+    description="privacy policy for the boom app"
+>
+    <div class="stack gap-10">
+        <main class="wrapper about">
+            <Hero
+                title="boom privacy policy"
+                tagline="Last Updated: 12/7/23"
+            >
+            <h5>
+thank you you for using boom, this privacy policy is designed to help you understand how your personal information is collected, used, and shared when you use boom.</h5>
+            </Hero>
+				<div class="content text-center">
+				</div>
+			<section>
+				<h2 class="section-title">Information We Collect:</h2>
+				<div class="content">
+					<ol>
+                        <li><b>Personal Information:</b>
+<ul>
+    <li>If you register for an account we collect your name, email address, and other information you provide voluntarily.</li>
+    <li>If you make in-app purchases, we may collect information related to your transactions.
+</li>
+</ul>
+</li>
+                        <li><b>Device Information:</b>
+<ul>
+    <li>We automatically collect certain information about your device, including the device model, operating system, and unique device identifiers.
+</li>
+</li>
+</ul>
+                        <li><b>Usage Information:</b>
+<ul>
+    <li>We collect information about how you use the app, such as the features you interact with, the content you view, and the actions you take.
+</li>
+</li>
+</ul>
+</li>                     </ol>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">How We Use Your Information:</h2>
+				<div class="content">
+					<ol>
+                        <li><b>Provide and Improve the App:</b>
+<ul>
+    <li>We use your information to provide, maintain, and improve the functionality of Boom.</li>
+    <li>Your feedback and usage patterns help us enhance the user experience.
+</li>
+</ul>
+</li>
+                        <li><b>Communicate with You:</b>
+<ul>
+    <li>We may use your email address to send you important updates, announcements, and information related to the app.
+</li>
+</li>
+</ul>
+                        <li><b>Personalization:</b>
+<ul>
+    <li>We use your information to personalize your experience within the app, such as recommending sounds based on your preferences.
+</li>
+</li></ul>
+                        <li><b>Analytics:</b>
+<ul>
+    <li>We use analytics tools to understand how users interact with the app, helping us make informed decisions for future improvements.
+</li>
+</li>
+
+</ul>
+</li>                     </ol>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Sharing Your Information:</h2>
+				<div class="content">
+    <li>We do not sell, trade, or otherwise transfer your personal information to third parties without your consent, except as set forth in this Privacy Policy or if required by law.
+
+</li>
+			</section>        
+            			<section>
+				<h2 class="section-title">Security:
+
+</h2>
+				<div class="content">
+    <li>We prioritize the security of your personal information and attempt to implement industry-standard security measures to protect against unauthorized access or disclosure.
+</li>
+			</section>   
+                        			<section>
+				<h2 class="section-title">Your Choices:
+
+</h2>
+				<div class="content">
+    <li>You can control the collection and use of certain information by contacting the boom team. If you have any questions or concerns about your privacy, please contact us at <a href="mailto:logan@loganwhitten.com">logan@loganwhitten.com</a>.
+
+</li>
+			</section>  
+                                    			<section>
+				<h2 class="section-title">Updates to this Privacy Policy:
+
+</h2>
+				<div class="content">
+    <li>We may update this Privacy Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. We encourage you to review this Privacy Policy periodically.
+
+
+</li>
+			</section>  
+        </main>
+        <h5>By using Boom, you agree to the terms outlined in this Privacy Policy.
+<br>
+
+
+		<ContactCTA />
+	</div>
+</BaseLayout>
+            <style>
+                .about {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 3.5rem;
+                }
+
+                img {
+                    margin-top: 1.5rem;
+                    border-radius: 1.5rem;
+                    box-shadow: var(--shadow-md);
+                }
+
+                section {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.5rem;
+                    color: var(--gray-200);
+                }
+
+                .section-title {
+                    grid-column-start: 1;
+                    font-size: var(--text-xl);
+                    color: var(--gray-0);
+                }
+
+                .content {
+                    grid-column: 2 / 4;
+                }
+
+                .content :global(a) {
+                    text-decoration: 1px solid underline transparent;
+                    text-underline-offset: 0.25em;
+                    transition: text-decoration-color var(--theme-transition);
+                }
+
+                .content :global(a:hover),
+                .content :global(a:focus) {
+                    text-decoration-color: currentColor;
+                }
+
+                @media (min-width: 50em) {
+                    .about {
+                        display: grid;
+                        grid-template-columns: 1fr 60% 1fr;
+                    }
+
+                    .about > :global(:first-child) {
+                        grid-column-start: 2;
+                    }
+
+                    section {
+                        display: contents;
+                        font-size: var(--text-lg);
+                    }
+                }
+            </style>
+        </main>
+    </div>
+</BaseLayout>
