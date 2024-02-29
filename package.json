@@ -10,6 +10,20 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^2.10.14"
+    "@astrojs/mdx": "^2.1.1",
+    "@astrojs/react": "^3.0.10",
+    "@astrojs/vue": "^4.0.8",
+    "@julian_cataldo/astro-lightbox": "^0.10.11",
+    "@tresjs/core": "^3.7.0",
+    "@types/react": "^18.2.60",
+    "@types/react-dom": "^18.2.19",
+    "astro": "^4.4.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "three": "^0.161.0",
+    "vue": "^3.4.21"
+  },
+  "devDependencies": {
+    "sass": "^1.71.1"
   }
 }

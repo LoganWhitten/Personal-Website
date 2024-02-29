@@ -24,16 +24,33 @@ const projects = (await getCollection('work')).sort(
 				tagline="See my most recent projects below to get an idea of my past experience."
 				align="start"
 			/>
-			<Grid variant="offset">
-				{
-					projects.map((project) => (
-						<li>
-							<PortfolioPreview project={project} />
-						</li>
-					))
-				}
-			</Grid>
+			<div class="gallery">
+				<Grid variant="offset">
+					{
+						projects.map((project) => (
+							<li>
+								<PortfolioPreview project={project} />
+							</li>
+						))
+					}
+				</Grid>
+
+			</div>
 		</main>
 		<ContactCTA />
 	</div>
 </BaseLayout>
+
+<style>
+			.gallery {
+			grid-area: gallery;
+			max-width: 50vh;
+            margin-inline: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+
+		}
+</style>

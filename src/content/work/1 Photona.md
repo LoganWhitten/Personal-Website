@@ -7,8 +7,7 @@ img_3: /assets/photona/photona-3.jpg
 img_4: /assets/photona/photona-1.jpg
 img_alt: A forest scene lit in purple
 description: |
-  When designing this show, we wanted to approach color in a fantastic and magical way.  We were able to acheive this by using purples, blues, and other "magical" colors.
 tags:
-  - Assistant Lighting Designer
+  - Assistant Programmer
   - ETC Eos
 ---
