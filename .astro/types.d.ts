@@ -126,37 +126,44 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"work": {
-"1 Photona.md": {
-	id: "1 Photona.md";
-  slug: "1-photona";
+"1 TIOY.md": {
+	id: "1 TIOY.md";
+  slug: "1-tioy";
   body: string;
   collection: "work";
   data: InferEntrySchema<"work">
 } & { render(): Render[".md"] };
-"2 The Addams Family.md": {
-	id: "2 The Addams Family.md";
-  slug: "2-the-addams-family";
+"2 Photona.md": {
+	id: "2 Photona.md";
+  slug: "2-photona";
   body: string;
   collection: "work";
   data: InferEntrySchema<"work">
 } & { render(): Render[".md"] };
-"3 Cinderella.md": {
-	id: "3 Cinderella.md";
-  slug: "3-cinderella";
+"3 The Addams Family.md": {
+	id: "3 The Addams Family.md";
+  slug: "3-the-addams-family";
   body: string;
   collection: "work";
   data: InferEntrySchema<"work">
 } & { render(): Render[".md"] };
-"3 Internship.md": {
-	id: "3 Internship.md";
-  slug: "3-internship";
+"4 Internship.md": {
+	id: "4 Internship.md";
+  slug: "4-internship";
   body: string;
   collection: "work";
   data: InferEntrySchema<"work">
 } & { render(): Render[".md"] };
-"4 Fortress.md": {
-	id: "4 Fortress.md";
-  slug: "4-fortress";
+"5 Cinderella.md": {
+	id: "5 Cinderella.md";
+  slug: "5-cinderella";
+  body: string;
+  collection: "work";
+  data: InferEntrySchema<"work">
+} & { render(): Render[".md"] };
+"5 Fortress.md": {
+	id: "5 Fortress.md";
+  slug: "5-fortress";
   body: string;
   collection: "work";
   data: InferEntrySchema<"work">
