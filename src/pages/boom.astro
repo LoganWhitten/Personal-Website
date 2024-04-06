@@ -1,0 +1,28 @@
+---
+let url = "";
+---
+
+<div id="redirect"></div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", (event) => {
+        const isMobile = () => {
+            var check = false;
+            (function (a) {
+                if (
+                    /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+                        a,
+                    )
+                )
+                    check = true;
+            })(navigator.userAgent || "");
+            return check;
+        };
+
+        url = isMobile()
+            ? "https://apps.apple.com/us/app/boom-not-another-sound-board/id6445970336"
+            : "https://play.google.com/store/apps/details?id=com.boomapp";
+
+        window.location.href = url;
+    });
+</script>
