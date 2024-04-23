@@ -121,7 +121,7 @@ const $$Nav = createComponent(async ($$result, $$props, $$slots) => {
   ];
   const iconLinks = [
     { label: "GitHub", href: "https://github.com/lights9999", icon: "github-logo" },
-    { label: "LinkedIn", href: "https://www.linkedin.com/in/logan-whitten-2329a718b/", icon: "linkedin-logo" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/L-Whitten/", icon: "linkedin-logo" },
     { label: "Instagram", href: "https://instagram.com/loganwhitten512", icon: "instagram-logo" }
   ];
   return renderTemplate`${maybeRenderHead()}<nav data-astro-cid-dmqpwcec> <div class="menu-header" data-astro-cid-dmqpwcec> <a href="/" class="site-title" data-astro-cid-dmqpwcec> ${renderComponent($$result, "Icon", $$Icon, { "icon": "lightbulb-filament", "color": "White", "size": "1.1em", "data-astro-cid-dmqpwcec": true })}
