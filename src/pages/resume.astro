@@ -1,7 +1,5 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-
-import ContactCTA from '../components/ContactCTA.astro';
 import Hero from '../components/Hero.astro';
 ---
 
@@ -10,8 +8,10 @@ import Hero from '../components/Hero.astro';
 		<main class="wrapper about">
 			<Hero
 			title="Resume">
-			<embed src="/assets/LoganWhittenResume.pdf" type="application/pdf" width="700px" height="700px"/>
-			<p1><a href="/assets/LoganWhittenResume.pdf">Download</a> a copy here.</p>
+			<div class="sm:hidden">
+				<embed src="/assets/LoganWhittenResume.pdf" type="application/pdf" width="700px" height="700px"/>
+			</div>
+			<p1><a href="/assets/LoganWhittenResume.pdf">Download</a> a copy here.</p1>
 			</Hero>
 
 			
