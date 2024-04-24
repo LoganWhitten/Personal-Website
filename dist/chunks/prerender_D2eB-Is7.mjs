@@ -120,7 +120,7 @@ const $$Nav = createComponent(async ($$result, $$props, $$slots) => {
     { label: "Resume", href: "/resume/" }
   ];
   const iconLinks = [
-    { label: "GitHub", href: "https://github.com/lights9999", icon: "github-logo" },
+    { label: "GitHub", href: "https://github.com/loganwhitten", icon: "github-logo" },
     { label: "LinkedIn", href: "https://www.linkedin.com/in/L-Whitten/", icon: "linkedin-logo" },
     { label: "Instagram", href: "https://instagram.com/loganwhitten512", icon: "instagram-logo" }
   ];
