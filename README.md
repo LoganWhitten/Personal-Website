@@ -1,7 +1,7 @@
-# Astro Starter Kit: Portfolio
+# Logan Whitten's Website
 
 ```
-npm create astro@latest -- --template portfolio
+I made this project with help from a fantistic astro theme linked below!
 ```
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/portfolio)
