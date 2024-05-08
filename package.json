@@ -10,11 +10,13 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/node": "^8.2.5",
     "@julian_cataldo/astro-lightbox": "^0.10.11",
     "@tresjs/core": "^3.7.0",
     "@types/react": "^18.2.60",
     "@types/react-dom": "^18.2.19",
     "astro": "^4.4.6",
+    "lenis": "^1.0.45",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "vue": "^3.4.21"

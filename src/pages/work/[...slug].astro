@@ -11,6 +11,7 @@ import Pill from "../../components/Pill.astro";
 import Grid from "../../components/Grid.astro";
 
 interface Props {
+    [x: string]: any;
     entry: CollectionEntry<"work">;
 }
 
@@ -24,7 +25,7 @@ export async function getStaticPaths() {
         props: { entry },
     }));
 }
-
+export const prerender = true;
 const { entry } = Astro.props;
 const { Content } = await entry.render();
 ---
