@@ -7,7 +7,7 @@
           "45YNA92TPT.LoganWhitten.boom"
         ],
         "paths": [
-          "*"
+          "/unlock/*"
         ],
         "components": [
           {
