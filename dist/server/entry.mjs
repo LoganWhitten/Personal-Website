@@ -1,5 +1,5 @@
 import { renderers } from './renderers.mjs';
-import { l as levels, g as getEventPrefix, L as Logger, A as AstroIntegrationLogger, manifest } from './manifest_B0QIocdE.mjs';
+import { l as levels, g as getEventPrefix, L as Logger, A as AstroIntegrationLogger, manifest } from './manifest_VymxJQ0r.mjs';
 import { appendForwardSlash as appendForwardSlash$1, joinPaths, trimSlashes, slash, prependForwardSlash as prependForwardSlash$1, removeTrailingForwardSlash, collapseDuplicateSlashes } from '@astrojs/internal-helpers/path';
 import { A as AstroError, R as ResponseSentError, q as MiddlewareNoDataOrNextCalled, t as MiddlewareNotAResponse, v as ROUTE_TYPE_HEADER, G as GetStaticPathsRequired, w as InvalidGetStaticPathsReturn, x as InvalidGetStaticPathsEntry, y as GetStaticPathsExpectedParams, z as GetStaticPathsInvalidRouteParam, P as PageNumberParamNotFound, N as NoMatchingStaticPathFound, B as PrerenderDynamicEndpointPathCollide, C as ReservedSlotName, D as renderSlotToString, H as renderJSX, J as chunkToString, K as clientAddressSymbol$1, O as ClientAddressNotAvailable, S as StaticClientAddressNotAvailable, Q as responseSentSymbol$1, T as LocalsNotAnObject, V as clientLocalsSymbol, W as ASTRO_VERSION, X as renderEndpoint, Y as renderPage, Z as REROUTABLE_STATUS_CODES, _ as REROUTE_DIRECTIVE_HEADER } from './chunks/astro_D9qiLCuz.mjs';
 import { serialize, parse } from 'cookie';
@@ -2326,11 +2326,11 @@ const _page1 = () => import('./chunks/404_BMw4pXqY.mjs');
 const _page2 = () => import('./chunks/android_4QPzeY9Q.mjs');
 const _page3 = () => import('./chunks/boom_C_rJUQUO.mjs');
 const _page4 = () => import('./chunks/deleteaccount_DAPrYof_.mjs');
-const _page5 = () => import('./chunks/privacypolicy_18tl3GBO.mjs');
-const _page6 = () => import('./chunks/resume_DU6C-Iy5.mjs');
-const _page7 = () => import('./chunks/work_ClLVzB1x.mjs');
-const _page8 = () => import('./chunks/_.._BtVAI9Nf.mjs');
-const _page9 = () => import('./chunks/index_BcnZ0auZ.mjs');
+const _page5 = () => import('./chunks/privacypolicy_Csys7gPr.mjs');
+const _page6 = () => import('./chunks/resume_zgTugXwB.mjs');
+const _page7 = () => import('./chunks/work_TUnL7AwK.mjs');
+const _page8 = () => import('./chunks/_.._Dg0VKH0p.mjs');
+const _page9 = () => import('./chunks/index_BsGSJwJF.mjs');
 const pageMap = new Map([
     ["node_modules/astro/dist/assets/endpoint/node.js", _page0],
     ["src/pages/404.astro", _page1],

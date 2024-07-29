@@ -1,6 +1,6 @@
 import { c as createAstro, d as createComponent, r as renderTemplate, g as renderComponent, m as maybeRenderHead } from '../astro_D9qiLCuz.mjs';
 import 'kleur/colors';
-import { g as getCollection, a as $$Grid, b as $$PortfolioPreview, $ as $$ContactCTA } from './index_Dv1WacUW.mjs';
+import { g as getCollection, a as $$Grid, b as $$PortfolioPreview, $ as $$ContactCTA } from './index_BOb2N1y5.mjs';
 import { $ as $$Hero, a as $$BaseLayout } from './404_BU-URf9c.mjs';
 /* empty css                         */
 

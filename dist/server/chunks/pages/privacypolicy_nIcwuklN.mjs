@@ -1,7 +1,7 @@
 import { c as createAstro, d as createComponent, r as renderTemplate, g as renderComponent, m as maybeRenderHead } from '../astro_D9qiLCuz.mjs';
 import 'kleur/colors';
 import { $ as $$Hero, a as $$BaseLayout } from './404_BU-URf9c.mjs';
-import { $ as $$ContactCTA } from './index_Dv1WacUW.mjs';
+import { $ as $$ContactCTA } from './index_BOb2N1y5.mjs';
 /* empty css                                  */
 
 const $$Astro = createAstro();

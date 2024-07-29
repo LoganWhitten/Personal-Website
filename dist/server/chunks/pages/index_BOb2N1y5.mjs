@@ -205,7 +205,7 @@ createCollectionToGlobResultMap({
 });
 
 let lookupMap = {};
-lookupMap = {"work":{"type":"content","entries":{"1-tioy":"/src/content/work/1 TIOY.md","2-photona":"/src/content/work/2 Photona.md","3-the-addams-family":"/src/content/work/3 The Addams Family.md","4-internship":"/src/content/work/4 Internship.md","5-cinderella":"/src/content/work/5 Cinderella.md","5-fortress":"/src/content/work/5 Fortress.md","5-littlewomen":"/src/content/work/5 LittleWomen.md"}}};
+lookupMap = {"work":{"type":"content","entries":{"1-tioy":"/src/content/work/1 TIOY.md","2-photona":"/src/content/work/2 Photona.md","3-the-addams-family":"/src/content/work/3 The Addams Family.md","5-cinderella":"/src/content/work/5 Cinderella.md","5-fortress":"/src/content/work/5 Fortress.md","5-littlewomen":"/src/content/work/5 LittleWomen.md","4-internship":"/src/content/work/4 Internship.md"}}};
 
 function createGlobLookup(glob) {
 	return async (collection, lookupId) => {
