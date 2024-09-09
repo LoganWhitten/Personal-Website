@@ -126,30 +126,16 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"work": {
-"1 TIOY.md": {
-	id: "1 TIOY.md";
-  slug: "1-tioy";
+"3 Photona.md": {
+	id: "3 Photona.md";
+  slug: "3-photona";
   body: string;
   collection: "work";
   data: InferEntrySchema<"work">
 } & { render(): Render[".md"] };
-"2 Photona.md": {
-	id: "2 Photona.md";
-  slug: "2-photona";
-  body: string;
-  collection: "work";
-  data: InferEntrySchema<"work">
-} & { render(): Render[".md"] };
-"3 The Addams Family.md": {
-	id: "3 The Addams Family.md";
-  slug: "3-the-addams-family";
-  body: string;
-  collection: "work";
-  data: InferEntrySchema<"work">
-} & { render(): Render[".md"] };
-"4 Internship.md": {
-	id: "4 Internship.md";
-  slug: "4-internship";
+"4 The Addams Family.md": {
+	id: "4 The Addams Family.md";
+  slug: "4-the-addams-family";
   body: string;
   collection: "work";
   data: InferEntrySchema<"work">
@@ -168,9 +154,30 @@ declare module 'astro:content' {
   collection: "work";
   data: InferEntrySchema<"work">
 } & { render(): Render[".md"] };
+"5 Internship.md": {
+	id: "5 Internship.md";
+  slug: "5-internship";
+  body: string;
+  collection: "work";
+  data: InferEntrySchema<"work">
+} & { render(): Render[".md"] };
 "5 LittleWomen.md": {
 	id: "5 LittleWomen.md";
   slug: "5-littlewomen";
+  body: string;
+  collection: "work";
+  data: InferEntrySchema<"work">
+} & { render(): Render[".md"] };
+"Bandit Internship.md": {
+	id: "Bandit Internship.md";
+  slug: "bandit-internship";
+  body: string;
+  collection: "work";
+  data: InferEntrySchema<"work">
+} & { render(): Render[".md"] };
+"This is Our Youth.md": {
+	id: "This is Our Youth.md";
+  slug: "this-is-our-youth";
   body: string;
   collection: "work";
   data: InferEntrySchema<"work">
