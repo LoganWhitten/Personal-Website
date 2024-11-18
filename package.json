@@ -10,6 +10,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/netlify": "^5.5.4",
     "@astrojs/node": "^8.2.5",
     "@julian_cataldo/astro-lightbox": "^0.10.11",
     "@tresjs/core": "^3.7.0",
