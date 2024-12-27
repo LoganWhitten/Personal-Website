@@ -1,64 +1,33 @@
 ---
-import Icon from './Icon.astro';
-const currentYear = new Date().getFullYear();
+const today = new Date();
+import { Icon } from "astro-icon/components";
 ---
 
-<footer>
-		<p>&copy; 2024 Logan Whitten</p>
-	</div>
+<footer
+  class="md:flex md:justify-between md:items-center md:align-center font-overpass-mono w-full md:h-full mt-12"
+>
+  <div class="text-[12px] text-center items-center flex justify-center">
+    &copy; {today.getFullYear()} Logan Whitten. All rights reserved.
+  </div>
+  <div class="flex justify-center gap-3 m-2 sm:m-0">
+    <a href="https://github.com/loganwhitten" target="_blank">
+      <span class="sr-only">Go to Erfi's GitHub repo</span>
+      <Icon name="mdi:github" class="h-[20px] w-[20px]" />
+    </a>
+    <a href="https://www.instagram.com/loganwhitten512/" target="_blank">
+      <span class="sr-only">Go to Erfi's Instragram Profile</span>
+      <Icon name="mdi:instagram" class="h-[20px] w-[20px]" />
+    </a>
+    <a
+      id="rss-link"
+      href=""
+      target="_blank"
+      style="visibility: hidden; width: 0; height: 0;"
+    >
+      <span class="sr-only">Subscribe to RSS Feed</span>
+      <Icon name="mdi:rss" class="h-[20px] w-[20px]" />
+    </a>
+  </div>
+  <slot />
 </footer>
-<style>
-	footer {
-		display: flex;
-		flex-direction: column;
-		gap: 3rem;
-		margin-top: auto;
-		padding: 3rem 2rem 3rem;
-		text-align: center;
-		color: var(--gray-400);
-		font-size: var(--text-sm);
-	}
-
-	footer a {
-		color: var(--gray-400);
-		text-decoration: 1px solid underline transparent;
-		text-underline-offset: 0.25em;
-		transition: text-decoration-color var(--theme-transition);
-	}
-
-	footer a:hover,
-	footer a:focus {
-		text-decoration-color: currentColor;
-	}
-
-	.group {
-		display: flex;
-		flex-direction: column;
-		gap: 0.5rem;
-	}
-
-	.socials {
-		display: flex;
-		justify-content: center;
-		gap: 1rem;
-		flex-wrap: wrap;
-	}
-
-	@media (min-width: 50em) {
-		footer {
-			flex-direction: row;
-			justify-content: space-between;
-			padding: 2.5rem 5rem;
-		}
-
-		.group {
-			flex-direction: row;
-			gap: 1rem;
-			flex-wrap: wrap;
-		}
-
-		.socials {
-			justify-content: flex-end;
-		}
-	}
-</style>
+<script src="../scripts/rss.js"></script>

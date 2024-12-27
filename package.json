@@ -1,28 +1,50 @@
 {
-  "name": "peaceful-planet",
+  "name": "Revistav4",
   "type": "module",
-  "version": "0.0.1",
+  "version": "4.9.9",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "postbuild": "pagefind --site dist"
   },
   "dependencies": {
-    "@astrojs/netlify": "^5.5.4",
-    "@astrojs/node": "^8.2.5",
-    "@julian_cataldo/astro-lightbox": "^0.10.11",
-    "@tresjs/core": "^3.7.0",
-    "@types/react": "^18.2.60",
-    "@types/react-dom": "^18.2.19",
-    "astro": "^4.4.6",
-    "lenis": "^1.0.45",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "vue": "^3.4.21"
+    "@astrojs/check": "^0.9.4",
+    "@astrojs/markdoc": "0.12.4",
+    "@astrojs/mdx": "4.0.3",
+    "@astrojs/react": "4.1.2",
+    "@astrojs/rss": "^4.0.10",
+    "@astrojs/sitemap": "^3.2.1",
+    "@astrojs/tailwind": "5.1.4",
+    "@fontsource-variable/inconsolata": "^5.1.0",
+    "@fontsource-variable/overpass-mono": "^5.1.0",
+    "@iconify-json/mdi": "^1.2.2",
+    "@types/react": "^19.0.1",
+    "@types/react-dom": "^19.0.2",
+    "@types/sanitize-html": "^2.13.0",
+    "astro": "5.1.1",
+    "astro-icon": "^1.1.4",
+    "caniuse-lite": "^1.0.30001689",
+    "dayjs": "^1.11.13",
+    "framer-motion": "^11.15.0",
+    "glightbox": "^3.3.0",
+    "markdown-it": "^14.1.0",
+    "mdast-util-to-string": "^4.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "reading-time": "^1.5.0",
+    "sanitize-html": "^2.13.1",
+    "tailwindcss": "^3.4.16",
+    "typescript": "^5.7.2",
+    "undici": "^7.1.1"
   },
   "devDependencies": {
-    "sass": "^1.71.1"
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/typography": "^0.5.15",
+    "pagefind": "^1.2.0",
+    "prettier": "^3.4.2",
+    "prettier-plugin-astro": "^0.14.1"
   }
 }

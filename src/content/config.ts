@@ -1,22 +1,97 @@
-import { defineCollection, z } from 'astro:content';
+// 1. Import utilities from `astro:content`
+import { z, defineCollection } from "astro:content";
 
-export const collections = {
-	work: defineCollection({
-		schema: z.object({
-			title: z.string(),
-			description: z.string(),
-			publishDate: z.coerce.date(),
-			tags: z.array(z.string()),
-			img: z.string(),
-			img_2: z.string().optional(),
-			img_3: z.string().optional(),
-			img_4: z.string().optional(),
-			img_alt: z.string().optional(),
-			img_2_alt: z.string().optional(),
-			img_3_alt: z.string().optional(),
-			img_4_alt: z.string().optional(),
+// 2. Define a `type` and `schema` for each collection
+const muses = defineCollection({
+  type: "content", // v2.5.0 and later
+  schema: z.object({
+    title: z.string(),
+    tags: z.array(z.string()),
+    author: z.string(),
+    description: z.string(),
+    image: z.object({
+      src: z.string(),
+      alt: z.string(),
+      positionx: z.string().optional(),
+      positiony: z.string().optional()
+    }).optional(),
+    pubDate: z.coerce.date(),
+    updatedDate: z.coerce.date().optional(),
+  }),
+});
 
-			
-		}),
-	}),
-};
+const short_form = defineCollection({
+  type: "content", // v2.5.0 and later
+  schema: z.object({
+    title: z.string(),
+    tags: z.array(z.string()),
+    author: z.string(),
+    description: z.string(),
+    image: z.object({
+      src: z.string(),
+      alt: z.string(),
+      positionx: z.string().optional(),
+      positiony: z.string().optional()
+    }).optional(),
+    pubDate: z.coerce.date(),
+    updatedDate: z.coerce.date().optional(),
+  }),
+});
+
+const long_form = defineCollection({
+  type: "content", // v2.5.0 and later
+  schema: z.object({
+    title: z.string(),
+    tags: z.array(z.string()),
+    author: z.string(),
+    description: z.string(),
+    image: z.object({
+      src: z.string(),
+      alt: z.string(),
+      positionx: z.string().optional(),
+      positiony: z.string().optional()
+    }).optional(),
+    pubDate: z.coerce.date(),
+    updatedDate: z.coerce.date().optional(),
+  }),
+});
+
+const zeitweilig = defineCollection({
+  type: "content", // v2.5.0 and later
+  schema: z.object({
+    title: z.string(),
+    tags: z.array(z.string()),
+    author: z.string(),
+    description: z.string(),
+    image: z.object({
+      src: z.string(),
+      alt: z.string(),
+      positionx: z.string().optional(),
+      positiony: z.string().optional()
+    }).optional(),
+    pubDate: z.coerce.date(),
+    updatedDate: z.coerce.date().optional(),
+  }),
+});
+
+const authors = defineCollection({
+  type: "content", // v2.5.0 and later
+  schema: z.object({
+    title: z.string(),
+    tags: z.array(z.string()),
+    author: z.string(),
+    description: z.string(),
+    image: z.object({
+      src: z.string(),
+      alt: z.string(),
+      positionx: z.string().optional(),
+      positiony: z.string().optional()
+    }).optional(),
+    pubDate: z.coerce.date(),
+    updatedDate: z.coerce.date().optional(),
+  }),
+});
+
+
+// 3. Export a single `collections` object to register your collection(s)
+export const collections = { muses, short_form, long_form, zeitweilig, authors };
