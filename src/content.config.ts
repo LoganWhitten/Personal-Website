@@ -117,10 +117,10 @@ const cv = defineCollection({
 });
 // 3. Export a single `collections` object to register your collection(s)
 export const collections = {
-  muses,
-  short_form,
+  //muses,
+  //short_form,
   long_form,
-  zeitweilig,
-  authors,
-  cv,
+  //zeitweilig,
+  //authors,
+  //cv,
 };
