@@ -52,7 +52,11 @@ import ThemeToggle from "./ThemeToggle";
 
 <script>
   function applyTheme(theme: "light" | "dark") {
+    if (theme === "light") {
+      document.documentElement.classList.remove("dark");
+    } else {
       document.documentElement.classList.add("dark");
+    }
     document.documentElement.classList.add("theme-transition");
     localStorage.setItem("theme", theme);
   }
