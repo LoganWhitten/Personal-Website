@@ -1,0 +1,41 @@
+---
+import Example from "../components/sheet";
+---
+
+<Example />
+
+<script>
+  import { XMLParser } from "fast-xml-parser";
+  import { dummyInstruments } from "../components/sheet_data";
+  document
+    .getElementById("xmlFileInput")
+    ?.addEventListener("change", function (event) {
+      const input = event.target as HTMLInputElement;
+      const file = input?.files ? input.files[0] : null;
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+          const xmlContent = e.target?.result;
+          let Lights: Map<string, any> = parseXML(xmlContent);
+          Lights.forEach((value, key) => {
+            console.log(key, value['Position']);
+            
+          });
+        };
+        reader.readAsText(file);
+      }
+    });
+  function parseXML(xmlContent) {
+    const parser = new XMLParser();
+    let parsedData = parser.parse(xmlContent);
+    const instrumentData: Map<string, any> =
+      parsedData["SLData"]["InstrumentData"];
+    let lights = new Map<string, any>();
+    for (const [key, value] of Object.entries(instrumentData)) {
+      if (key.startsWith("UID")) {
+        lights.set(key, value);
+      }
+    }
+    return lights;
+  }
+</script>
