@@ -10,11 +10,11 @@ import undiciRetry from "./src/scripts/undici-retry.js";
 import react from "@astrojs/react";
 // https://astro.build/config
 export default defineConfig({
-  site: "https://www.erfianugrah.com",
+  site: "https://loganwhitten.com",
   image: {
-    domains: ["erfianugrah.com", "cdn.erfianugrah.com"],
+    domains: ["loganwhitten.com"],
     service: {
-      entrypoint: "astrohttps://loganwhitten.com/assets/services/sharp",
+      entrypoint: "astro/assets/services/sharp",
       config: {
         limitInputPixels: false,
       },
