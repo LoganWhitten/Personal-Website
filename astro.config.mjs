@@ -14,7 +14,7 @@ export default defineConfig({
   image: {
     domains: ["erfianugrah.com", "cdn.erfianugrah.com"],
     service: {
-      entrypoint: "astro/assets/services/sharp",
+      entrypoint: "astrohttps://loganwhitten.com/assets/services/sharp",
       config: {
         limitInputPixels: false,
       },
