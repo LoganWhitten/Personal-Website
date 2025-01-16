@@ -19,7 +19,7 @@ const favicon_avif = await getImage({
   <nav class="flex items-center justify-between w-full h-[30px]">
     {
       !is404Page && (
-        <div class="flex items-center h-[30px]">
+        <div class="flex items-center gap-3 h-[30px]">
           <a href="/" class="block">
             <img
               class="favicon dark:invert w-[30px] h-[30px]"
@@ -29,7 +29,14 @@ const favicon_avif = await getImage({
               height="30"
             />
           </a>
-        </div>
+          |
+            <a href="/long_form/" class="hover:text-gray-300 text-sm">
+              Projects
+            </a>
+            <a href="/resume/" class="hover:text-gray-300 text-sm">
+              Resume
+            </a>
+          </div>
       )
     }
     <div class="flex items-center h-[30px] gap-2">
@@ -40,7 +47,6 @@ const favicon_avif = await getImage({
               <ThemeToggle />
             </div>
             <div class="flex items-center justify-center h-[30px] w-[30px]">
-              <Hamburger client:load />
             </div>
           </>
         )

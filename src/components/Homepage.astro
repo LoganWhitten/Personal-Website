@@ -19,7 +19,7 @@ const { title, images, alt, urls, width, height } = Astro.props;
         <source media="(min-width: 768px)" srcset="" data-srcset-medium />
         <img
           id="randomHomePageImage"
-          class="hidden h-[440px] sm:h-[600px] lg:h-[700px] xl:h-[1000px] object-contain w-full object-center"
+          class="hidden h-[440px] sm:h-[600px] lg:h-[700px] xl:h-[800px] object-contain w-full object-center"
           src=""
           alt=""
           data-srcset-small
@@ -32,12 +32,6 @@ const { title, images, alt, urls, width, height } = Astro.props;
   <div
     class="font-overpass-mono text-[14px] text-center items-center flex justify-center gap-2"
   >
-    <a href="/resume/" class="hover:underline bg-black bg-opacity-20 p-1">
-      Resume
-    </a>
-    <a href="/long_form/" class="hover:underline bg-black bg-opacity-20 p-1"
-      >Completed Projects</a
-    >
   </div>
 </BaseLayout>
 <script src="../scripts/homePage.js"></script>
