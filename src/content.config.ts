@@ -40,9 +40,9 @@ const short_form = defineCollection({
   }),
 });
 
-const long_form = defineCollection({
+const projects = defineCollection({
   // type: "content", // v2.5.0 and later
-  loader: glob({ pattern: "**\/[^_]*.mdx", base: "./src/content/long_form" }),
+  loader: glob({ pattern: "**\/[^_]*.mdx", base: "./src/content/projects" }),
   schema: z.object({
     title: z.string(),
     tags: z.array(z.string()),
@@ -119,7 +119,7 @@ const cv = defineCollection({
 export const collections = {
   //muses,
   //short_form,
-  long_form,
+  projects,
   //zeitweilig,
   //authors,
   //cv,
