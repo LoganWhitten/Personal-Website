@@ -3,10 +3,19 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout>
-  <div class="place-self-center">
-    <iframe
-      src="https://loganwhitten.com/assets/LoganWhittenResume01-15-25.pdf"
-      title="Resume"
-      class="place-self-center h-[600px] w-[450px]"></iframe>
+  <div
+    class="container mx-auto flex items-center justify-center min-h-0 flex-grow"
+  >
+    <div
+      class="relative w-full md:max-h-[75vh] place-self-center"
+      style="aspect-ratio: 8.5/11;"
+    >
+      <iframe
+        src="https://loganwhitten.com/assets/LoganWhittenResume01-15-25.pdf"
+        title="Resume"
+        class="absolute w-full h-full"
+      >
+      </iframe>
+    </div>
   </div>
 </BaseLayout>
